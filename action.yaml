@@ -1,0 +1,14 @@
+name: 'Simple Action'
+description: 'Teste de input'
+author: 'Bruno'
+inputs:
+  myInput:
+    description: 'Adicione um INPUT'
+    required: true
+    default: 'Teste BM'
+outputs:
+  myOutput:
+    description: 'total memory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
