@@ -13,5 +13,6 @@ jobs:
         myInput: 'BM'
     - name: output the memory
       run: |
-        echo ${{ steps.hello.outputs.memory }}
-        echo "total memory successfully output"
+        #echo ${{ steps.hello.outputs.memory }}
+        echo ${{ state.memory }}
+        echo "Memoria total coletada"
