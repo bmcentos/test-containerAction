@@ -14,5 +14,5 @@ jobs:
     - name: output the memory
       run: |
         echo "Memoria:"
-        echo ${{ state.memory }}
+        echo ${{ steps.hello.outputs.memory }}
         echo "Memoria total coletada"
